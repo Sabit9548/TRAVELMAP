@@ -4,7 +4,7 @@ const app = express();
 const pinRoute = require("./routes/pins");
 const userRoute = require("./routes/users");
 app.use(express.json());
-mongoose.connect("mongodb+srv://sabitmalik748083:sabit9548748083@cluster0.crqbpee.mongodb.net/?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true})
+mongoose.connect(process.env.sabit,{useNewUrlParser:true,useUnifiedTopology:true})
 .then(()=>{
     console.log("mongodb connected");
 }).catch((err)=>{
