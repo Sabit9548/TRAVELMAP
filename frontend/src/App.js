@@ -87,7 +87,7 @@ setPins(res.data)
   return (
     <div className="App">
       <Map
-        mapboxAccessToken={process.env.REACT_APP_MAPBOX}
+        mapboxAccessToken=""
         style={{
           width: "100vw",
           height: "100vh",
